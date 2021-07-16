@@ -144,7 +144,7 @@
             <div class="resume-item">
               <h4>Master systèmes et réseaux</h4>
               <h5>2018 - Aujourd'hui</h5>
-              <p><em>Ivry-sur-Seine</em></p>
+              <p><em>Ivry-sur-Seine, Intech</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -158,7 +158,7 @@
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Pixalione</h4>
+              <h4>Easybourse</h4>
               <h5>Septembre 2020 - Aujourd'hui</h5>
               <p><em>Issy les Moulineaux, Easybourse</em></p>
               <ul>
@@ -187,6 +187,7 @@
             <p class="description"><p>WhoSell-u est un site internet qui permet aux utilsateurs de créer une adresse mail jetable pour les sites qu'ils consultent</p>
             <p>Ce projet permet de mettre en évidence les sites qui revendent leurs base de données utilisateur, en effet un mail correspond à un seul magasin donc si un utilisateur
              reçoit un mail d'un autre magasin cela prouve la vente de l'identités de ses clients.</p>
+             <p> Boite à outils: LAMP, Postfix, Imap, Bash, VPS sous OVH, Debian</p>
             <p>Ce projet a été recompensé par le prix du jury.
             </p></p>
           </div>
@@ -197,14 +198,16 @@
               Ce projet nous a permis de nous familiarisé avec les protocol de monitoring. Nous avons mis en place Centreon, et le monitoring sur quelques équipements<p>
                 Ces equipements ont été choisies selon les possibilités offertes par la version gratuite de Centreon.... donc pas grand chose.
                 <p>Mais ce projet nous a permis de comprendre les tenant et aboutissant du monitoring et de comprendre les enjeux de ceux ci. </p>
-              </p> </p</p>
+                <p> Boite à outils: Centreon, ESXI, VMware, SNMP, Windows</p>
+              </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-bar-chart"></i></div>
             <h4 class="title"><a href="">Sensibilité Cybersécurité</a></h4>
             <p class="description">Ce projet avait pour but de sensibilisé les personnes présentent à notre presentation à la sécurité IT en entreprise
               Ce projet m'était en lumiere, grâce à une mise en situation en vidéo, et des exemples concrets les erreurs fréquentes et leurs conséquences.
-            Ces bonnes pratique qui doivent être connu de tous, car de simple petite erreur ou des mauvaise habitude peuvent avoir des grosse conséquences pour l'employé et l'entreprise. </p>
+            Ces bonnes pratiques qui doivent être connu de tous, car de simple petite erreur ou des mauvaise habitude peuvent avoir des grosse conséquences pour l'employé et l'entreprise. </p>
+            <p> Boite à outils: Python, LAMP, Metasploit, Debian, Windows</p>
             </div>
 
           <h3 class="resume-title">Projet en entreprise</h3>
@@ -220,25 +223,32 @@
             <p>Ce projet à permis de progresser sur le monitoring en utilisant de nombreux outils tel que Grafana Prometheus, et les nombreux outils qui permettent de recceuillir 
               les métrics sur l'ensemble des serveurs monitorer.</p>
             </p>
+            <p> Boite à outils: Docker, Docker Swarm, Prometheus, Grafana, Influxdb, Debian, Blackbox</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-brightness-high"></i></div>
             <h4 class="title"><a href="">Migration Kubernetes</a></h4>
             <p class="description">Ce projet avait pour but de migrer l'ensemble de nos applications et services présent sur Docker Swarm, sur la nouvelle stack
-              kubernetes.</p><p> Lors de ce projet j'ai du apprendre l'utilisation de Kubernetes, car cet orchestrateur était nouveau pour moi. une fois l'outils globalement 
-                maitrisé il a fallu reprendre l'ensemble des services présent sous Docker Swarm, rediger les chart Helm et les déployer en utilisant les CI/CD que nous avions montés auparavant.   
+              kubernetes.</p>
+              <p> Lors de ce projet j'ai du apprendre l'utilisation de Kubernetes, car cet orchestrateur était nouveau pour moi. Il a tout d'abord fallu appréhender Ansible pour la gestion et l'administration des serveurs que nous allions 
+                utilisé pour Kubernetes. Ensuite appréhender l'installation de Kubernetes en alliant mes connaissances acquise sur ansible pour automatisé cette tâche. 
+                Une fois notre cluster Kubernetes opérationnel, j'ai participé à la migration des services interne à l'entreprise sous Kubernetes. Notamment mon plus gros projet au sein de l'entreprise le monitoring
+                ou j'ai eu a ajouté de nouveau serveur et modifier le service pour qu'il reponde à la nouvelle architecture. 
+              </p> 
             </p>
+             <p> Boite à outils: Helm, Ansible, Kubernetes, OCFS2, Rook </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="bi bi-calendar4-week"></i></div>
             <h4 class="title"><a href="">Partage Samba</a></h4>
             <p class="description">Ce projet avait pour but de créer un partage de fichier conteneurisé et sécurisé.
               Les conteneurs permettait de partager des fichiers entre les personnes qui en avait l'autorisation.</p>
-              <p>La contrainte de la conteneurisation etait une contrainte venant de l'entreprise, nous avons donc du apréhender et comprendre les differents montage NFS et SSHFS que nous devions
-                reproduire dans un conteneurs. Ces technologies n'etant pas faites pour etre conteneurisées nous avons eu un gros travail de recherche et du user d'un ruse en créant dans la stack
-                swarm un launcher de conteneurs qui lancait un conteneur via docker-compose qui lui permattait ce genre de montage en SSHFS.
+              <p>La contrainte de la conteneurisation était une contrainte venant de l'entreprise, nous avons donc du apréhender et comprendre les differents montage NFS et SSHFS que nous devions
+                reproduire dans un conteneurs. Ces technologies n'étant pas faites pour etre conteneurisées nous avons eu un gros travail de recherche et nous avons été contraint d'incorporer dans notre stack
+                swarm un launcher de conteneurs qui lancait un conteneur via docker-compose qui lui permattait ce genre de montage en SSHFS. En effet Docker Swarm ne permettait pas d'utiliser cette technologie.
                 Pour le montage en NFS, celui ci etant supporté par Docker Swarm nous avons eu beaucoup moins de difficulté. 
               </p>
+              <p> Boite à outils: Debian, Docker, Docker Swarm, NFS, Synology, SSHFS, Windows, Windows Active directory, gestion des droits </p>
           </div>
         </div>
       </div>
@@ -256,39 +266,42 @@
           <div class="col-lg-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-briefcase"></i></div>
             <h4 class="title"><a href="">DevOps</a></h4>
-            <p class="description">Lors de mes differents projets et mes missions sur differents outils devops j'ai pu acquerir des compétences sur ces outils. 
-              Notamment lors d'un projet en entreprise qui avait pour but de migrer l'ensemble des applications interne à l'entreprise sur kubernetes. j'ai participé à la création des 
-              chart Helm en vu de la migration des services sous Kubernetes. 
-              J'ai également eu l'opportunité de créer des services internes à l'entreprise, dans une stack swarm, dans le but d'être utilisés par mes collaborateurs.
-              J'ai appris à utiliser Ansible un outils de déploiement automatisé, ainsi que certains outils de monitoring tel que Prometheus, grafana et les differents collecteurs utiles pour la recupérations de métrics. 
-             </p>
+            <p class="description">Lors de mes differents projets et mes missions sur differents outils devops j'ai pu acquerir des compétences sur differents outils qui offrent les possibilités de respecter les idées du Devops. 
+              Au sein de mon entreprise easybourse, j'ai travaillé sur des projet sur la création de services. Ces services crées pour une utiliser mon permis de prendre en experience sur l'utilisation de Docker. Par exemple l'utilisation 
+              du SSHFS pour des volumes dans une stack Swarm. 
+              Plus tard lors de mon alternance, le service DSI a décidé de migrer l'ensemble des services sous Kubernetes. 
+              Cette transition a été accompagné d'une montée en compétence sur les outils migrés et Helm, qui permet de créer les fichiers nécessaires à la création des services. 
+              J'ai du apprendre a utiliser l'outil Kubernetes, cet orchestrateur de conteneurs qui a été choisie pour remplacer docker swarm. 
+              Pour la gestion des serveurs au sein de l'entreprise et l'administration de ceux ci nous avons utilisé Ansible. cet outils nous a permis d'administrer de facon beaucou aisé et homogène.
+              Puis nous avons mis en place des CI/CD, sur gitlab qui nous permettent de déployer simplement et efficacement les services internes.  
+            </p>
           </div>
           <div class="col-lg-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
             <h4 class="title"><a href="">Sytèmes</a></h4>
-            <p class="description">Lors de ma formation et des mes années au sein de mon entreprise l'OS le plus utilisé fut Ubuntu. j'ai donc parfait ma formation sur linux car il est important de connaitre 
-             l'os sur lequel nos services fonctionnent et où nous travaillons, j'ai donc eu beaucoup de temps pour apréhender cet outils que je connaissais de mes années scolaires notamment lors de ma participation
-             a plusieurs projet. 
-             Lors de mon alternance j'ai eu l'opportunité d'approfondir mes connaisances et d'avoir de l'experiences que j'ai pu mettre a profit lors des differents projet notamment pour l'automatisation et la 
-             creation de service conteneurisé sur une base Ubuntu.  
+            <p class="description">Lors de ma formation et de mes années au sein de mon entreprise l'OS le plus utilisé fut Ubuntu. j'ai donc parfait ma formation sur linux car il est important de connaitre 
+             l'os sur lequel nos services fonctionnent et où nous travaillons, j'ai donc eu beaucoup de temps pour apréhender cet outils que je connaissais déjà de mes années scolaires notamment lors de ma participation
+             à plusieurs projet. 
+             Lors de mon alternance j'ai eu l'opportunité d'approfondir mes connaisances et d'avoir de l'experiences que j'ai pu mettre à profit lors des differents projet notamment pour l'automatisation et la 
+             création de service conteneurisé sur une base debian.  
             </p>
           </div>
           <div class="col-lg-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-bar-chart"></i></div>
             <h4 class="title"><a href="">Méthodologie Agile</a></h4>
-            <p class="description">La méthodologie, j'en ai entendu parler pour la premiere fois lors de ma formation au seins d'Intech, sans pouvoir la visualisé dans des cas concret et en situations réel. 
-              Ce n'est qu'a mon arrivé au sein d'Easybourse que j'ai decouvert cette méthodologie de travail et cette organisation.
+            <p class="description">La méthodologie Agile, j'en ai entendu parler pour la premiere fois lors de ma formation au seins d'Intech, sans pouvoir la visualiser dans des cas concret et en situations réel. 
+              Ce n'est qu'à mon arrivé au sein d'Easybourse que j'ai découvert cette méthodologie de travail et cette organisation.
             Notamment avec un travail autour des Sprint planning, qui m'ont obligé à visualiser en avance mes tâches pour la réalisation des mes projets ou des diferrents tâches dans l'entreprise. 
-          J'ai également progresser sur la prise de hauteur à propos de mon travail, avec les sprint review, qui ont pour objectif de preciser les point qui se sont bien passé et ceux ou cela été plus 
-        difficile dans le but de les corrigés et de progresser. Ce travail à egalement été necessaire dans les differents Daily Meeting, ces reunion qui m'ont permis de restitué le travail effectué la veil 
+          J'ai également progresser sur la prise de hauteur à propos de mon travail, avec les sprint review, qui ont pour objectif de préciser les points qui se sont bien passés et ceux ou cela a été plus 
+        difficile dans le but de les corrigés et de progresser. Ce travail à également été nécessaire dans les differents Daily Meeting, ces reunions qui m'ont permis de restituer le travail effectué la veille 
       et d'exprimer mes difficultés. </p>
           </div>
           <div class="col-lg-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-binoculars"></i></div>
             <h4 class="title"><a href="">Travail en équipe</a></h4>
-            <p class="description">Depuis le début de ma formation, j'ai travaillé en équipe. Au début c'etait des équipes composés d'amis avec lesquels j'avais envie de travail donc c'était relativement simple.
-              Mais arrivé dans mon entreprise j'ai travaillé avec des gens que je ne connaissais pas, j'ai donc découvrir cette partie du monde de l'entreprise. Mais c'est une partie qui me plait, de pouvoir 
-              partagé des connaisances, des idées, et des expériences cela m'a aidé a progressé plus vite. Si quelqu'un à deja fais une erreur et qu'on le sait on gagne du temps en évitant de la reproduire.
+            <p class="description">Depuis le début de ma formation, j'ai travaillé en équipe. Lors de mes projet au sein d'Intech, c'etait des équipes composés d'amis avec lesquels j'avais envie de travail cela etait donc beaucoup aisé.
+              Mais arrivé dans mon entreprise j'ai travaillé avec des gens que je ne connaissais pas, j'ai donc découvert cette partie du monde de l'entreprise. Mais c'est une partie qui me plait, de pouvoir 
+              partagé des connaisances, des idées, et des expériences cela m'a aidé à progresser plus vite. Si quelqu'un à deja fais une erreur et qu'on le sait on gagne du temps en évitant de la reproduire.
             </p>
           </div>
         </div>
